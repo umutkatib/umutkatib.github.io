@@ -1,0 +1,22 @@
+.avatar {
+            display: block;
+            margin: 0 auto 1rem;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .hero { text-align: center; }
+        .hero p { max-width: 42rem; margin-inline: auto; }
+        .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .tags { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 0; }
+        .tags li {
+            padding: .2rem .75rem;
+            border: 1px solid var(--pico-muted-border-color);
+            border-radius: 999px;
+            font-size: .9rem;
+            margin: 0;
+        }
+        .tags li::marker { content: none; }
+        section { margin-bottom: 2rem; }
+        footer.site-footer { text-align: center; padding: 2rem 0; }
