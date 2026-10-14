@@ -1,1 +1,0 @@
-# umutkatib.github.io
