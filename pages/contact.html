@@ -3,28 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-    >
-    <title>Umut Katib</title>
+    <meta name="description" content="Contact Umut Katib, full-stack developer.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Contact | Umut Katib</title>
 </head>
 <body>
+    <main class="container">
         <nav>
             <ul>
                 <li><strong>UMUT KATIB</strong></li>
             </ul>
             <ul>
-                <li><a href="/index.html" class="contrast">About</a></li>
-                <li><a href="/pages/contact.html" class="contrast">Contact Me</a></li>
-                <li><a href="https://github.com/umutkatib" class="contrast">My Projects on GitHub</a></li>
+                <li><a href="/index.html#about" class="contrast">About</a></li>
+                <li><a href="/index.html#skills" class="contrast">Skills</a></li>
+                <li><a href="/index.html#projects" class="contrast">Projects</a></li>
+                <li><a href="/pages/contact.html" class="contrast" aria-current="page">Contact Me</a></li>
+                <li><a href="https://github.com/umutkatib" class="contrast">GitHub</a></li>
             </ul>
         </nav>
-        <article>
-            <header>You can contact me on the below links:
-                <h3>LinkedIn</h1>
-                <a href="https://www.linkedin.com/in/umut-katib-206909b7/">LinkedIn</a>
-            </header>
-        </article>
+
+        <header>
+            <h1>Contact me</h1>
+            <p>Have a project in mind or just want to say hello? You can reach me through the links below.</p>
+        </header>
+
+        <div class="grid">
+            <article>
+                <header><strong>LinkedIn</strong></header>
+                <p>Connect with me or send a message.</p>
+                <footer>
+                    <a href="https://www.linkedin.com/in/umut-katib-206909b7/" target="_blank" rel="noopener noreferrer" role="button">Open LinkedIn</a>
+                </footer>
+            </article>
+
+            <article>
+                <header><strong>GitHub</strong></header>
+                <p>Browse my code and projects.</p>
+                <footer>
+                    <a href="https://github.com/umutkatib" target="_blank" rel="noopener noreferrer" role="button" class="secondary">Open GitHub</a>
+                </footer>
+            </article>
+
+        </div>
+
+        <footer class="site-footer">
+            <small>&copy; 2026 Umut Katib. Built with HTML and Pico CSS.</small>
+        </footer>
+    </main>
 </body>
 </html>
