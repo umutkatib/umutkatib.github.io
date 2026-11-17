@@ -1,57 +1,132 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="dark scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Full-stack geliştirici Umut Katib ile iletişime geç.">
     <link rel="alternate" hreflang="en" href="/pages/contact.html">
     <link rel="alternate" hreflang="tr" href="/tr/contact.html">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
     <link rel="stylesheet" href="/styles/style.css">
     <title>İletişim | Umut Katib</title>
 </head>
-<body>
-    <main class="container">
-        <nav>
-            <ul>
-                <li><strong>UMUT KATIB</strong></li>
-            </ul>
-            <ul>
-                <li><a href="/tr/index.html#about" class="contrast">Hakkımda</a></li>
-                <li><a href="/tr/index.html#skills" class="contrast">Yetenekler</a></li>
-                <li><a href="/tr/index.html#projects" class="contrast">Projeler</a></li>
-                <li><a href="/tr/contact.html" class="contrast" aria-current="page">İletişim</a></li>
-                <li><a href="https://github.com/umutkatib" class="contrast">GitHub</a></li>
-                <li><a href="/pages/contact.html" class="secondary" hreflang="en" lang="en" aria-label="English">EN</a></li>
+
+<body
+    class="bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-300">
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <nav
+            class="sticky top-4 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-800 rounded-full px-6 py-3 mb-12 shadow-sm flex flex-wrap items-center justify-between transition-colors duration-300">
+            <div class="font-extrabold text-slate-900 dark:text-white tracking-tight">UMUT KATIB</div>
+            <ul class="flex flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium">
+                <li><a href="/tr/index.html#about"
+                        class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Hakkımda</a>
+                </li>
+                <li><a href="/tr/index.html#skills"
+                        class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Yetenekler</a>
+                </li>
+                <li><a href="/tr/index.html#projects"
+                        class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Projeler</a>
+                </li>
+                <li><a href="/tr/contact.html"
+                        class="px-3 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 font-semibold transition">İletişim</a>
+                </li>
+                <li><a href="https://github.com/umutkatib" target="_blank"
+                        class="px-3 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition">GitHub</a>
+                </li>
+                <li><a href="/pages/contact.html" hreflang="en" lang="en"
+                        class="font-mono text-xs font-semibold px-2.5 py-1 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition">EN</a>
+                </li>
+                <!-- Theme Toggle Button -->
+                <li>
+                    <button id="theme-toggle" aria-label="Temayı değiştir"
+                        class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 transition flex items-center justify-center text-slate-700 dark:text-slate-300">
+                        <svg id="theme-icon-dark" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                        <svg id="theme-icon-light" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
             </ul>
         </nav>
 
-        <header>
-            <h1>İletişim</h1>
-            <p>Aklında bir proje mi var, yoksa sadece merhaba mı demek istiyorsun? Aşağıdaki bağlantılardan bana ulaşabilirsin.</p>
+        <header class="text-center max-w-xl mx-auto mb-12">
+            <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">İletişim</h1>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Aklında bir proje mi var, yoksa sadece merhaba
+                mı demek istiyorsun? Aşağıdaki bağlantılardan bana ulaşabilirsin.</p>
         </header>
 
-        <div class="grid">
-            <article>
-                <header><strong>LinkedIn</strong></header>
-                <p>Bağlantı kur ya da mesaj gönder.</p>
-                <footer>
-                    <a href="https://www.linkedin.com/in/umut-katib-206909b7/" target="_blank" rel="noopener noreferrer" role="button">LinkedIn'i aç</a>
-                </footer>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-16">
+            <article
+                class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden">
+                <div>
+                    <div
+                        class="p-6 pb-3 font-bold text-slate-900 dark:text-white text-lg border-b border-slate-100 dark:border-slate-800">
+                        LinkedIn</div>
+                    <p class="p-6 pt-3 text-slate-600 dark:text-slate-400 text-sm">Bağlantı kur ya da mesaj gönder.</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-950/50 border-t border-slate-100 dark:border-slate-800 p-6">
+                    <a href="https://www.linkedin.com/in/umut-katib-206909b7/" target="_blank" rel="noopener noreferrer"
+                        class="inline-block w-full text-center px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-sm transition">LinkedIn'i
+                        aç</a>
+                </div>
             </article>
 
-            <article>
-                <header><strong>GitHub</strong></header>
-                <p>Kodlarıma ve projelerime göz at.</p>
-                <footer>
-                    <a href="https://github.com/umutkatib" target="_blank" rel="noopener noreferrer" role="button" class="secondary">GitHub'ı aç</a>
-                </footer>
+            <article
+                class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden">
+                <div>
+                    <div
+                        class="p-6 pb-3 font-bold text-slate-900 dark:text-white text-lg border-b border-slate-100 dark:border-slate-800">
+                        GitHub</div>
+                    <p class="p-6 pt-3 text-slate-600 dark:text-slate-400 text-sm">Kodlarıma ve projelerime göz at.</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-950/50 border-t border-slate-100 dark:border-slate-800 p-6">
+                    <a href="https://github.com/umutkatib" target="_blank" rel="noopener noreferrer"
+                        class="inline-block w-full text-center px-5 py-2.5 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 font-semibold rounded-xl shadow-sm transition">GitHub'ı
+                        aç</a>
+                </div>
             </article>
         </div>
 
-        <footer class="site-footer">
+        <footer class="text-center py-8 text-slate-400 text-xs">
             <small>&copy; 2026 Umut Katib.</small>
         </footer>
     </main>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.remove('dark');
+        } else {
+            document.documentElement.classList.add('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', function () {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 </body>
+
 </html>
